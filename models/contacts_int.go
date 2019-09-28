@@ -1,12 +1,13 @@
 package models
 
+
 //Структура "Контакт" хранит один контакт
 
 type Contact struct{
-	name string
-	age int
-	gender string
-	number string
+	Name	string	`db:"name"`
+	Age	int	`db:"age"`
+	Gender	string	`db:"gender"`
+	Number	string	`db:"number"`
 }
 
 //Структура "Менеджер Контактов" хранит массив структур "Контакт"
@@ -15,6 +16,5 @@ type ContactManagerI interface {
 	Update (i int, ct Contact) error
 	Del (i int) error
 	GetAll () ([]Contact, error)
+	ListAll () error
 }
-
-
