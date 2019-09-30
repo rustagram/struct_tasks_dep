@@ -1,10 +1,10 @@
-package tasks
+package models
 
 import(
 	"time"
 )
 
-type struct Task {
+type Task struct{
 	Assignee string
 	Title string
 	Deadline time.Time

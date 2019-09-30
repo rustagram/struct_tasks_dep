@@ -3,7 +3,6 @@ package models
 
 import (
 	"testing"
-	_ "fmt"
 	"github.com/jmoiron/sqlx"
 )
 
